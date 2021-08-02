@@ -1,0 +1,41 @@
+.header {
+  height: 250px;
+}
+
+.popular-books,
+.all-books {
+  background-color: #1a1e21;
+  padding: 5px;
+  margin: auto;
+  text-align: left;
+  border-radius: 20px;
+  margin: 2rem auto;
+  overflow: hidden;
+}
+.text {
+  color: white;
+}
+img {
+  width: 130px;
+  height: auto;
+}
+h2 {
+  font-size: 40px;
+  /* font-weight: bold; */
+  font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
+  /* font-family: "Lucida Console", "Courier New", monospace; */
+}
+.header {
+  height: 250px;
+}
+.headerText {
+  /* color: #3fa3e4; */
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  /* width: 40%; */
+  padding: 5%;
+  text-align: center;
+}
