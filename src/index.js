@@ -3,12 +3,22 @@ import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
 import Books from './pages/books/books'
 import Navbar from './componenets/navbar/navbar';
+
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
+import BookDetails from './pages/bookDetails/bookDetails';
 ReactDOM.render(
-  <React.StrictMode>
-    <Navbar />
-    <Books />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <React.StrictMode>
+      <Navbar />
+      <Switch>
+        <Route path='/books/:id' component={BookDetails} />
+        <Route path='/books' component={Books} />
+      </Switch>
+      {/* <Books /> */}
+    </React.StrictMode>
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
